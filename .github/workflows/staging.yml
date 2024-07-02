@@ -26,7 +26,7 @@ jobs:
       - name: Migrate TypeORM
         run: echo "Migrate TypeORM"
 
-      - name: Servelss Deploy
+      - name: Servelss  Deploy
         run: echo "Servelss Deploy"
 
   test:
