@@ -30,4 +30,4 @@ jobs:
         run: echo "Servelss Deploy"
 
   test:
-    uses: andreyLobo0/PipelineAutomationTest/.github/workflows/staging.yml@v1
+    uses: andreyLobo0/PipelineAutomationTest/.github/workflows/staging.yml@main
