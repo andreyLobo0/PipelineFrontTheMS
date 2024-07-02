@@ -29,5 +29,5 @@ jobs:
       - name: Servelss  Deploy
         run: echo "Servelss Deploy"
 
-  test:
+  automation-tests:
     uses: andreyLobo0/PipelineAutomationTest/.github/workflows/staging.yml@main
