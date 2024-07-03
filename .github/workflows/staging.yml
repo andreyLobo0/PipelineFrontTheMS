@@ -29,5 +29,6 @@ jobs:
       - name: Servelss Deploy
         run: echo "Servelss Deploy"
 
-  automation-tests:
+  trigger-common:
+    needs: primary-job
     uses: andreyLobo0/PipelineAutomationTest/.github/workflows/staging.yml@main
