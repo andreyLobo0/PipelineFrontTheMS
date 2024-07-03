@@ -31,4 +31,7 @@ jobs:
 
   trigger-common:
     needs: build
-    uses: andreyLobo0/PipelineAutomationTest/.github/workflows/staging.yml@main
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Automation test API/E2E
+        uses: andreyLobo0/PipelineAutomationTest/.github/workflows/staging.yml@main
