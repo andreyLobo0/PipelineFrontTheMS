@@ -30,8 +30,9 @@ jobs:
         run: echo "Servelss Deploy"
 
   trigger-common:
-    needs: build
     runs-on: ubuntu-latest
+    needs: build
+
     steps:
       - name: Run Automation test API/E2E
         uses: andreyLobo0/PipelineAutomationTest/.github/actions@main
