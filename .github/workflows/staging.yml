@@ -34,4 +34,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Automation test API/E2E
-        uses: andreyLobo0/PipelineAutomationTest/.github/workflows/staging.yml@main
+        uses: andreyLobo0/PipelineAutomationTest/.github/actions/staging.yml@main
