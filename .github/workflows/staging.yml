@@ -1,4 +1,4 @@
-name: Pipeline Tests
+name: Build e Deployment
 on:
   workflow_dispatch:
   push:
