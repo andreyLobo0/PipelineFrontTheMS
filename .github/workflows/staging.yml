@@ -29,10 +29,9 @@ jobs:
       - name: Servelss Deploy
         run: echo "Servelss Deploy"
 
-  trigger-common:
-    runs-on: ubuntu-latest
-    needs: build
-
-    steps:
-      - name: Run Automation test API/E2E
-        uses: andreyLobo0/PipelineAutomationTest/.github/actions@main
+      - name: Trigger E2E Tests Repository
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          repository: andreyLobo0/PipelineAutomationTest
+          event-type: e2e-tests-triggered
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
